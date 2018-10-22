@@ -3,7 +3,7 @@ FROM alpine:3.8
 ENV KUBE_VERSION="v1.12.1"
 
 # Metadata
-LABEL kubectl-version=$KUBE_LATEST_VERSION
+LABEL kubectl-version=$KUBE_VERSION
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
